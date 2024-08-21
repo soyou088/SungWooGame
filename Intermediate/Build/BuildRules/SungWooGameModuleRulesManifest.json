@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\SungWooGame\\Source\\SungWooGame\\SungWooGame.Build.cs",
+		"D:\\SungWooGame\\Source\\SungWooGame.Target.cs",
+		"D:\\SungWooGame\\Source\\SungWooGameEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.3"
+}

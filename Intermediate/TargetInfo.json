@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SungWooGame",
+			"Path": "..\\Source\\SungWooGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SungWooGameEditor",
+			"Path": "..\\Source\\SungWooGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
