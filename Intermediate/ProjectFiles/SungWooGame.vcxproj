@@ -252,6 +252,8 @@
     <None Include="..\..\SungWooGame.uproject"/>
     <None Include="..\..\Source\SungWooGame.Target.cs"/>
     <None Include="..\..\Source\SungWooGameEditor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -261,6 +263,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SungWooGame\CharacterBase.h"/>
+    <ClCompile Include="..\..\Source\SungWooGame\ContentsEnum.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SungWooGame\ContentsEnum.h"/>
     <ClCompile Include="..\..\Source\SungWooGame\MainCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

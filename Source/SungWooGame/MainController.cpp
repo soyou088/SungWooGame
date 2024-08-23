@@ -56,3 +56,25 @@ void AMainController::Space_Jump()
 	JCharacter->Jump();
 }
 
+void AMainController::MouseLeft_AttackStart()
+{
+	//AMainCharacter* Ch = GetPawn<AMainCharacter>();
+	//if (nullptr == Ch)
+	//{
+	//	return;
+	//}
+	//Ch->AttackCheck();
+
+
+}
+
+void AMainController::MouseLeft_AttackTick(float _DeltaTime)
+{
+	//AMainCharacter* Ch = GetPawn<AMainCharacter>();
+	//if (nullptr == Ch)
+	//{
+	//	return;
+	//}
+
+}
+

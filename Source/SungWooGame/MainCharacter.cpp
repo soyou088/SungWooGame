@@ -2,9 +2,9 @@
 
 
 #include "MainCharacter.h"
+#include "ContentsEnum.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
-
 
 
 AMainCharacter::AMainCharacter()
@@ -27,3 +27,14 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 }
+
+//void AMainCharacter::AttackCheck()
+//{
+//	//switch (IdleDefault)
+//	//{
+//	//case EPlayerState::Idle:
+//	//	
+//	//default:
+//	//	break;
+//	//}
+//}

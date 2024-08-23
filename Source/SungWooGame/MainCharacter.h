@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "CharacterBase.h"
+#include "ContentsEnum.h"
 #include "MainCharacter.generated.h"
+
+
 
 /**
  * 
@@ -29,7 +32,15 @@ protected:
 	UPROPERTY(Category = "Contents", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* CameraComponent = nullptr;
 
+	//UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//EPlayerState IdleDefault = EPlayerState::Idle;
+
 public:
+
+
+	/*UFUNCTION()
+	void AttackCheck();*/
+
 
 
 

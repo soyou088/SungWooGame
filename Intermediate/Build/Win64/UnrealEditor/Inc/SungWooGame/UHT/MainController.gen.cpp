@@ -76,6 +76,77 @@ DEFINE_FUNCTION(AMainController::execD_MoveRight)
 }
 // End Class AMainController Function D_MoveRight
 
+// Begin Class AMainController Function MouseLeft_AttackStart
+struct Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MainController.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainController, nullptr, "MouseLeft_AttackStart", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_AMainController_MouseLeft_AttackStart()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AMainController::execMouseLeft_AttackStart)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->MouseLeft_AttackStart();
+	P_NATIVE_END;
+}
+// End Class AMainController Function MouseLeft_AttackStart
+
+// Begin Class AMainController Function MouseLeft_AttackTick
+struct Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics
+{
+	struct MainController_eventMouseLeft_AttackTick_Parms
+	{
+		float _DeltaTime;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MainController.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp__DeltaTime;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::NewProp__DeltaTime = { "_DeltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MainController_eventMouseLeft_AttackTick_Parms, _DeltaTime), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::NewProp__DeltaTime,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainController, nullptr, "MouseLeft_AttackTick", nullptr, nullptr, Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::MainController_eventMouseLeft_AttackTick_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::MainController_eventMouseLeft_AttackTick_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AMainController_MouseLeft_AttackTick()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMainController_MouseLeft_AttackTick_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AMainController::execMouseLeft_AttackTick)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param__DeltaTime);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->MouseLeft_AttackTick(Z_Param__DeltaTime);
+	P_NATIVE_END;
+}
+// End Class AMainController Function MouseLeft_AttackTick
+
 // Begin Class AMainController Function MouseRotation
 struct Z_Construct_UFunction_AMainController_MouseRotation_Statics
 {
@@ -215,6 +286,8 @@ void AMainController::StaticRegisterNativesAMainController()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "A_MoveLeft", &AMainController::execA_MoveLeft },
 		{ "D_MoveRight", &AMainController::execD_MoveRight },
+		{ "MouseLeft_AttackStart", &AMainController::execMouseLeft_AttackStart },
+		{ "MouseLeft_AttackTick", &AMainController::execMouseLeft_AttackTick },
 		{ "MouseRotation", &AMainController::execMouseRotation },
 		{ "S_MoveBack", &AMainController::execS_MoveBack },
 		{ "Space_Jump", &AMainController::execSpace_Jump },
@@ -243,6 +316,8 @@ struct Z_Construct_UClass_AMainController_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMainController_A_MoveLeft, "A_MoveLeft" }, // 1406227364
 		{ &Z_Construct_UFunction_AMainController_D_MoveRight, "D_MoveRight" }, // 434420290
+		{ &Z_Construct_UFunction_AMainController_MouseLeft_AttackStart, "MouseLeft_AttackStart" }, // 372057920
+		{ &Z_Construct_UFunction_AMainController_MouseLeft_AttackTick, "MouseLeft_AttackTick" }, // 3349169651
 		{ &Z_Construct_UFunction_AMainController_MouseRotation, "MouseRotation" }, // 301817147
 		{ &Z_Construct_UFunction_AMainController_S_MoveBack, "S_MoveBack" }, // 2280391400
 		{ &Z_Construct_UFunction_AMainController_Space_Jump, "Space_Jump" }, // 4144667196
@@ -294,10 +369,10 @@ AMainController::~AMainController() {}
 struct Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMainController, AMainController::StaticClass, TEXT("AMainController"), &Z_Registration_Info_UClass_AMainController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainController), 810121485U) },
+		{ Z_Construct_UClass_AMainController, AMainController::StaticClass, TEXT("AMainController"), &Z_Registration_Info_UClass_AMainController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainController), 3044153033U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_2060090700(TEXT("/Script/SungWooGame"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_3873071471(TEXT("/Script/SungWooGame"),
 	Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

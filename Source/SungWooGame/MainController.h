@@ -38,6 +38,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Space_Jump();
 	
+	UFUNCTION(BlueprintCallable)
+	void MouseLeft_AttackStart();
+
+	UFUNCTION(BlueprintCallable)
+	void MouseLeft_AttackTick(float _DeltaTime);
+
 
 
 };

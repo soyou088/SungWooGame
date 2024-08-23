@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SUNGWOOGAME_MainCharacter_generated_h
 
-#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMainCharacter(); \
 	friend struct Z_Construct_UClass_AMainCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AMainCharacter)
 
 
-#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AMainCharacter(AMainCharacter&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AMainCharacter();
 
 
-#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_12_PROLOG
-#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_GENERATED_BODY \
+#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_PROLOG
+#define FID_SungWooGame_Source_SungWooGame_MainCharacter_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	FID_SungWooGame_Source_SungWooGame_MainCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	FID_SungWooGame_Source_SungWooGame_MainCharacter_h_18_INCLASS_NO_PURE_DECLS \
+	FID_SungWooGame_Source_SungWooGame_MainCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
