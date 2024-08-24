@@ -44,6 +44,12 @@
     <ClInclude Include="..\..\Source\SungWooGame\ContentsEnum.h">
       <Filter>Source\SungWooGame</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\SungWooGame\ItemBase.cpp">
+      <Filter>Source\SungWooGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SungWooGame\ItemBase.h">
+      <Filter>Source\SungWooGame</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SungWooGame\MainCharacter.cpp">
       <Filter>Source\SungWooGame</Filter>
     </ClCompile>

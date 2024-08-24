@@ -39,6 +39,9 @@ public:
 	void Space_Jump();
 	
 	UFUNCTION(BlueprintCallable)
+	void E_PickedUp();
+
+	UFUNCTION(BlueprintCallable)
 	void MouseLeft_AttackStart();
 
 	UFUNCTION(BlueprintCallable)

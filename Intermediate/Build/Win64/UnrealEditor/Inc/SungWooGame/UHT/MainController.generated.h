@@ -18,6 +18,7 @@ struct FInputActionValue;
 #define FID_SungWooGame_Source_SungWooGame_MainController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execMouseLeft_AttackTick); \
 	DECLARE_FUNCTION(execMouseLeft_AttackStart); \
+	DECLARE_FUNCTION(execE_PickedUp); \
 	DECLARE_FUNCTION(execSpace_Jump); \
 	DECLARE_FUNCTION(execD_MoveRight); \
 	DECLARE_FUNCTION(execA_MoveLeft); \

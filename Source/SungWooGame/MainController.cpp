@@ -56,6 +56,15 @@ void AMainController::Space_Jump()
 	JCharacter->Jump();
 }
 
+void AMainController::E_PickedUp()
+{
+	AMainCharacter* Ch = GetPawn<AMainCharacter>();
+	if (nullptr == Ch)
+	{
+		return;
+	}
+}
+
 void AMainController::MouseLeft_AttackStart()
 {
 	//AMainCharacter* Ch = GetPawn<AMainCharacter>();

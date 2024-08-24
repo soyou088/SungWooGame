@@ -76,6 +76,35 @@ DEFINE_FUNCTION(AMainController::execD_MoveRight)
 }
 // End Class AMainController Function D_MoveRight
 
+// Begin Class AMainController Function E_PickedUp
+struct Z_Construct_UFunction_AMainController_E_PickedUp_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MainController.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainController_E_PickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainController, nullptr, "E_PickedUp", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainController_E_PickedUp_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainController_E_PickedUp_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_AMainController_E_PickedUp()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMainController_E_PickedUp_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AMainController::execE_PickedUp)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->E_PickedUp();
+	P_NATIVE_END;
+}
+// End Class AMainController Function E_PickedUp
+
 // Begin Class AMainController Function MouseLeft_AttackStart
 struct Z_Construct_UFunction_AMainController_MouseLeft_AttackStart_Statics
 {
@@ -286,6 +315,7 @@ void AMainController::StaticRegisterNativesAMainController()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "A_MoveLeft", &AMainController::execA_MoveLeft },
 		{ "D_MoveRight", &AMainController::execD_MoveRight },
+		{ "E_PickedUp", &AMainController::execE_PickedUp },
 		{ "MouseLeft_AttackStart", &AMainController::execMouseLeft_AttackStart },
 		{ "MouseLeft_AttackTick", &AMainController::execMouseLeft_AttackTick },
 		{ "MouseRotation", &AMainController::execMouseRotation },
@@ -316,6 +346,7 @@ struct Z_Construct_UClass_AMainController_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMainController_A_MoveLeft, "A_MoveLeft" }, // 1406227364
 		{ &Z_Construct_UFunction_AMainController_D_MoveRight, "D_MoveRight" }, // 434420290
+		{ &Z_Construct_UFunction_AMainController_E_PickedUp, "E_PickedUp" }, // 123255674
 		{ &Z_Construct_UFunction_AMainController_MouseLeft_AttackStart, "MouseLeft_AttackStart" }, // 372057920
 		{ &Z_Construct_UFunction_AMainController_MouseLeft_AttackTick, "MouseLeft_AttackTick" }, // 3349169651
 		{ &Z_Construct_UFunction_AMainController_MouseRotation, "MouseRotation" }, // 301817147
@@ -369,10 +400,10 @@ AMainController::~AMainController() {}
 struct Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMainController, AMainController::StaticClass, TEXT("AMainController"), &Z_Registration_Info_UClass_AMainController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainController), 3044153033U) },
+		{ Z_Construct_UClass_AMainController, AMainController::StaticClass, TEXT("AMainController"), &Z_Registration_Info_UClass_AMainController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainController), 914645025U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_3873071471(TEXT("/Script/SungWooGame"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_186187524(TEXT("/Script/SungWooGame"),
 	Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SungWooGame_Source_SungWooGame_MainController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
